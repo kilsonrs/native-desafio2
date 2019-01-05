@@ -6,21 +6,11 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
+import '~/config/ReactotronConfig';
 
-import styles from '~/styles';
+import Routes from './routes';
 
-export default class App extends Component {
-  state = {
-    user: 'Kilson',
-  };
+const App = () => <Routes />;
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>{this.state.user}</Text>
-      </View>
-    );
-  }
-}
+export default App;
